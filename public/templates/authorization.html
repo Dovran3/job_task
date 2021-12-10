@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Authentication Window</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form method="post" class="form">
+      <div class="form__title">AUTHORIZATION</div>
+      <input type="text" name="username" class="form__input" placeholder="Username...">
+      <input type="text" name="email" class="form__input" placeholder="Email...">
+      <input type="password" name="password" class="form__input" placeholder="Password...">
+      <input type="checkbox" name="isAdmin" value="false" class="checkbox" checked>
+      <div class="form__container container">
+        <div class="container__text">Admin license</div>
+        <div class="container__text bool">FALSE</div>
+      </div>
+      <div class="form_buttons">
+        <button type="reset" class="form__button">CLEAR</button>
+        <button type="submit" class="form__button">SAVE</button>
+      </div>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

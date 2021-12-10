@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+:focus, :active, a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+  font-size: 14px;
+}
+input, button, textarea {font-family: inherit;}
+button {cursor: pointer;}
+a, a:visited {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;font-size: inherit;}
+
+body {
+  font-family: Arial;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px 1px black;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.form__title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 90%;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 1px 1px black;
+  border-radius: 5px;
+}
+
+.container {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 1px 1px black;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background-color: red;
+	color: white;
+}
+
+.container__text {
+	font-size: 24px;
+}
+
+.checkbox {
+	position: absolute;
+	transform: scale(0);
+}
+
+.form_buttons {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form__button {
+  width: 115px;
+  font-size: 18px;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 1px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 1366px) {
+  .form {
+    width: calc(290px + (600 - 290) * ((100vw - 320px) / (1366 - 320)));
+  }
+  .form__title {
+    font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1366 - 320)));
+    margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1366 - 320)));
+  }
+  .form__input {
+    font-size: calc(17px + (24 - 17) * ((100vw - 320px) / (1366 - 320)));
+    padding: 10px calc(10px + (20 - 10) * ((100vw - 320px) / (1366 - 320)));
+    margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1366 - 320)));
+  }
+  .form__button {
+    font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1366 - 320)));
+    padding: 10px calc(15px + (20 - 15) * ((100vw - 320px) / (1366 - 320)));
+    width: calc(85px + (115 - 85) * ((100vw - 320px) / (1366 - 320)));
+  }
+	.container__text {
+		font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1366 - 320)));
+	}
+}
