@@ -25,7 +25,7 @@ export function client_verify(req, res, next) {
       if (err) return res.send('This token is not what I have given -_-')
       next()
     })
-  } else return res.sendStatus(401)
+  } else return res.send('You are not authenticated')
 }
 
 export function clean_cookie(req, res, next) {
